@@ -8,8 +8,9 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 export default defineConfig({
   plugins: [
     vue(),
-    vueDevTools(),
+    vueDevTools()
   ],
+  base: '/', // Ensures app works with custom domain
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

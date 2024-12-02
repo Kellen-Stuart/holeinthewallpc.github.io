@@ -5,14 +5,14 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <img alt="Hole in the Wall PC Logo" src="@/assets/hole-in-the-wall-pc-logo-4.webp" width="250" height="250" style="margin-right: 20px;"/>
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="Build your dream" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/browse">Browse PCs</RouterLink>
       </nav>
     </div>
   </header>
