@@ -8,7 +8,7 @@ import HelloWorld from './components/HelloWorld.vue'
   <img alt="Hole in the Wall PC Logo" src="@/assets/hole-in-the-wall-pc-logo-4.webp" width="250" height="250" style="margin-right: 20px;"/>
 
     <div class="wrapper">
-      <HelloWorld msg="Build your dream" />
+      <HelloWorld msg="Custom PCs" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>

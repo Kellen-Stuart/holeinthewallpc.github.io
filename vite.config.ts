@@ -10,10 +10,19 @@ export default defineConfig({
     vue(),
     vueDevTools()
   ],
-  base: '/', // Ensures app works with custom domain
+  base: '', // Ensures app works with custom domain
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[hash][extname]',
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js'
+      }
+    }
+  }
 })
